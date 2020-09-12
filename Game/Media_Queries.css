@@ -1,0 +1,58 @@
+﻿@media screen and (max-width: 767px) and (min-width: 481px) {
+    .menuelemnt {
+        display: none
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width:450px) {
+    body{
+    }
+   .menu{
+       display:none;
+   }
+    .smallMenu {
+        margin-top: 35%;
+        width: 100px;
+        padding: 2%;
+        z-index: 15;
+        display: block;
+        position: absolute;
+        top: 6%;
+        float: left;
+    }
+    .smallMenu>img{
+        height:50px;
+        height:50px;
+    }
+    #boy{
+        width:120px;
+    }
+   
+    .ananas {
+        height: 170px;
+        width: 150px;
+    }
+    #back1,#back2{
+        margin-top:10%;
+        height:90%;
+    }
+    #
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .menu{
+        display:none;
+    }
+}
+
+.forPrint{
+    display:none;
+}
+@media print{
+    body *{
+        display:none;
+    }
+    .forPrint {
+        display: block;
+    }
+}

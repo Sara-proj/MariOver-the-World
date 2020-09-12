@@ -1,0 +1,93 @@
+﻿@media screen and (max-width: 767px) and (min-width: 481px) {
+    body {
+        font-size: 11px;
+    }
+
+    .header img {
+        width: 80vw;
+    }
+
+    .copy_rights b, .loader b {
+        display: none
+    }
+
+    .loader {
+        display: none
+    }
+
+    .header section > label {
+        display: none
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .gallery {
+        margin: 4vh 16vw;
+    }
+
+        .gallery > label {
+            font-size: 8em;
+        }
+
+    .modal-content {
+        width: 83vw;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .loader {
+        display: none
+    }
+
+    .header section > label {
+        display: none
+    }
+
+    .copy_rights {
+        margin-left: 12vw;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .copy_rights {
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    body {
+        font-size: 11px;
+        overflow: scroll;
+    }
+
+    .header img {
+        width: 80vw;
+    }
+
+    .copy_rights b, .loader b {
+        display: none
+    }
+
+    .loader {
+        display: none
+    }
+
+    .header section > label {
+        display: none
+    }
+
+    .copy_rights {
+        margin-top: 13vw;
+        position: absolute;
+        margin-left: 12vw;
+    }
+
+    .gallery > img {
+        width: 104%
+    }
+}
+}

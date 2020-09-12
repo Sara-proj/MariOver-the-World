@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MariOver the World</title>
+    <link href="learnnowcss.css" rel="stylesheet" />
+    <script src="learnnowt.js"></script>
+    <link href="media_queries.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../Game/img boy/boy_menu.png">
+
+</head>
+<body onload="build()" onunload="saveGame()">
+
+    <audio id="voiceans">
+        <source src="../Music/BEEP_20.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="wrapper">
+        <span class="menu" onmouseover="menu()">&#9776;</span>
+        <div class="menu" id="menu" onmouseout="closemenu()" onmousemove=" menu()">
+            <span id="spanmenu">&#9776;</span>
+            <img src="../Game/img boy/boy_menu.png" class="menuelemnt" />
+            <div>
+                <div class="a menuelemnt"><a href="../Home_Main/InstructionsPage.html" class="menuelemnt score">הוראות משחק</a></div>
+                <div class="a menuelemnt"><a href="../Home_Main/home.html" class="menuelemnt score">דף בית</a></div>
+                <div class="a menuelemnt"><a href="../learning/learnPage.html" class="menuelemnt score">בחירת ארצות</a></div>
+            </div>
+            <img src="../Home_Main/img ice/ananas.png" class="menuelemnt rotate" />
+            <label class="menuelemnt score"></label>
+            <div>
+                <img src="../Game/img boy/מיקום.png" class="menuelemnt micum" />
+                <span class="menuelemnt score"></span>
+            </div>
+
+            <img src="../Game/img boy/ראש 1-01.png" class="logo" />
+        </div>
+        <section>
+            <h1 id="question" class="addAnimation"></h1>
+            <span id="score" class="score1">+5</span>
+            <div id="wrapperananas">
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+                <img src="images/annas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas.png" class="bonusIce" id="bonusIce1" />
+                <img src="images/ananas2.png" class="bonusIce" id="bonusIce2" />
+                <img src="images/ananas3.png" class="bonusIce" id="bonusIce3" />
+                <img src="images/avatich2.png" class="bonusIce" id="bonusIce4">
+                <img src="images/artick.png" class="bonusIce" id="bonusIce5" />
+            </div>
+            <img src="images/question.png" id="objectadd" />
+            <img src="images/שינוי פרופיל 3.png" class="profil" id="player" />
+
+            <div id="answer">
+                <img src="images/no.png" id="no" onclick="ans(0)" class="ansBtn" alt="no_button" />
+                <img src="images/yes.png" id="yes" onclick="ans(1)" class="ansBtn" alt="yes_button" />
+            </div>
+        </section>
+        <article>
+            <a href="" id="continueG" target="_self">המשך</a>
+        </article>
+    </div>
+</body>
+</html>
+

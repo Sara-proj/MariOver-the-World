@@ -1,0 +1,293 @@
+﻿body {
+    overflow: hidden;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.header {
+    border-top: solid 2.5vh #ea7c6a;
+    background-color: #fdd854;
+}
+
+#logo {
+    margin-left: 1300px;
+    opacity: 1;
+    position: absolute;
+    z-index: 0;
+}
+
+.header img {
+    display: inline-block;
+    z-index: -1;
+    opacity: 1;
+}
+
+.boy {
+    opacity: 1;
+    z-index: 0;
+    position: absolute;
+    margin-top: 600px;
+}
+
+.circle {
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes circle {
+    from {
+        transform: perspective(300px) rotateY(0deg);
+        border-radius: 30px;
+    }
+
+    to {
+        transform: perspective(300px) rotateY(360deg);
+        border-radius: 30px;
+    }
+}
+/*עיצוב אנימציה המותאמת לכל סוגי הדפדפנים*/
+.animated_div {
+    position: relative;
+    animation: animated_div 5s 1;
+    -moz-animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+    -o-animation: animated_div 5s 1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animated_div {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes animated_div {
+    0% {
+        -webkit-transform: rotate(0deg);
+        left: 0px;
+    }
+
+    25% {
+        -webkit-transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    55% {
+        -webkit-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    70% {
+        -webkit-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+@-moz-keyframes animated_div {
+    0% {
+        -moz-transform: rotate(0deg);
+        left: 0px;
+    }
+
+    25% {
+        -moz-transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        -moz-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    55% {
+        -moz-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    70% {
+        -moz-transform: rotate(0deg);
+        left: 300px;
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+@-o-keyframes animated_div {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        left: 300px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+ .enterBtn {
+    position: absolute;
+    left: 44vw;
+    bottom: 40vh;
+}
+
+/*עיצוב כפתורים*/
+.button {
+    vertical-align: central;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fb7889;
+    border: none;
+    color: #ffe24d;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 130px;
+    height: 70px;
+    transition: 1s;
+    cursor: pointer;
+    /*margin: 5px;*/
+}
+    .button span {
+        vertical-align:central;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 1s;
+
+    }
+
+    /*הוספת חץ במעבר עכבר*/
+    .button span:after {
+        font-weight:bold;
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+.button:hover span {
+    padding-right: 25px;
+}
+    
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+.header section {
+    margin-left: 55vw;
+    margin-top: -20vh;
+    position: absolute;
+}
+.header section > label {
+    display: block;
+    text-align: center;
+}
+.copy_rights {
+    color: #ea7c6b;/*PINK*/
+    font-weight:200;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.loader {
+    font-size: 2vw;
+    vertical-align: central;
+    text-align: center;
+    display: inline-block;
+    border: 13px solid #90c7a4;/*green*/
+    border-radius: 50%;
+    border-top: 12px solid #ea7c6b;/*PINK*/
+    border-right: 12px solid #90c7a4;
+    border-bottom: 12px solid #ea7c6b;
+    width: 70px;
+    height: 70px;
+    animation: spin 3s linear infinite;
+    animation-delay: 4s;
+}
+
+
+/*//  C אנימציה לסיבוב הסימן*/ 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.copy_rights b,.loader b {
+    color: #90c7a4;/*green*/
+    font-size:2.5vw
+}

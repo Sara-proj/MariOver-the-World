@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MariOver the World</title>
+    <script src="mainScript.js"></script>
+    <link href="StyleGameSheet.css" rel="stylesheet" />
+    <link href="Media_Queries.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../Game/img boy/boy_menu.png">
+
+</head>
+<body onload="build()" onkeydown="move(event);back_music()" onunload="saveGame()" >
+    <iframe id="voice" src="" style="display:none"></iframe>
+    <audio id="back" loop autoplay>
+        <source src="../Music/Fun-video-game-app-music.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="voicejump">
+        <source src="../Music/B_WOP.mp3" type="audio/mpeg" />
+    </audio>
+    <span class="menu" onmouseover="menu()">&#9776;</span>
+    <div class="menu" id="menu" onmouseout="closemenu()" onmousemove="menu()">
+        <span id="spanmenu">&#9776;</span>
+        <img src="img boy/boy_menu.png" class="menuelemnt" />
+        <label class="score center" id="name">MARIO</label>
+        <ul>
+            <li class="a menuelemnt"><a href="../Home_Main/InstructionsPage.html" class="menuelemnt score">הוראות משחק</a></li>
+            <li class="a menuelemnt"><a href="../Home_Main/home.html" class="menuelemnt score">דף בית</a></li>
+            <li class="a menuelemnt"><a href="../learning/learnPage.html" class="menuelemnt score">בחירת ארצות</a></li>
+        </ul>
+        <img src="img_ice/ananas.png" class="menuelemnt rotate" />
+        <label class="menuelemnt score center">צברת 0 נקודות</label>
+        <div>
+            <img src="img boy/מיקום.png" class="menuelemnt position" />
+            <span class="menuelemnt score center"> אתה מבקר כעת בארץ הראשונה</span>
+        </div>
+        <img src="img boy/ראש 1-01.png" class="logo" />
+        <img src="img boy/print_icon.png" onclick="printS()" />
+    </div>
+  
+    <img src="img boy/forPrint.png" class="forPrint"/>
+
+    <div id="wrapper">
+        <div class="smallMenu">
+            <label id="userName1"></label>
+            <a href="../Home_Main/InstructionsPage.html"> <img src="../Home_Main/Icons/unnamed.jpg" title="הוראות" /></a>
+            <a href="../Home_Main/home.html"><img src="../Home_Main/Icons/home-icon-silhouette.png" title=" דף הבית" /></a>
+            <a href="../learning/learnPage.html">
+                <img src="img boy/location.png" title="ביקור בארצות" />
+            </a>
+            <img src="img boy/print_icon.png" onclick="printS()" />
+        </div>
+        <img src="img boy/שינוי פרופיל (2).png" id="boy" />
+        <img id="back1" />
+        <img id="back2" />
+        <span id="newScore" class="score1" hidden>+5</span>
+        <div id="keyboard">
+            <div id="moveUp" onclick="move(0,38)"></div>
+            <div id="moveDown"></div>
+            <div id="moveRight" onclick="move(0,39)"></div>
+            <div id="moveLeft"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

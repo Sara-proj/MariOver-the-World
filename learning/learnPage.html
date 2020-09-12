@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="StyleLearn.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <link href="../stealSheet.css" rel="stylesheet" />
+    <script src="LearnScript.js"></script>
+    <link href="../Home_Main/stylehome.css" rel="stylesheet" />
+    <link href="media_queries.css" rel="stylesheet" />
+    <title>MariOver the world</title>
+    <link rel="icon" type="image/x-icon" href="../Game/img boy/boy_menu.png">
+
+</head>
+<body onunload="saveGame()">
+    <header class="header">
+        <img src="../Home_Main/img boy/mini_logo.png" />
+        <section>
+            <div>
+                <div class="loader"><b>C</b></div>
+                <label class="copy_rights"> Chani Fisher<b> &</b> Sari Greenblatt</label>
+            </div>
+            <label>all rights reserved</label>
+        </section>
+    </header>
+    <div id="result">
+        <div id="gallery" class="container" >
+            <div class="gallery" onmousemove="opac(this)" onmouseout="xOpac(this)" >
+                <label>Syria </label>
+                <img src="images/ramadan-greeting-with-mosque-illustration-water-color-background_23152-55.jpg" onclick="openModal(this)" data-country="1"/>
+            </div>
+            <div class="gallery" onmousemove="opac(this)" onmouseout="xOpac(this)">
+                <label class="show" alt="England">England</label>
+                <img src="images/london-symbols-collection_98292-4502.jpg" onclick="openModal(this)" data-country="2" />
+            </div>
+            <div class="gallery" onmousemove="opac(this)" onmouseout="xOpac(this)">
+                <label>France</label>
+                <img src="images/france.jpg" onclick="openModal(this)" data-country="3"/>
+            </div>
+            <div class="gallery" onmousemove="opac(this)" onmouseout="xOpac(this)">
+                <label class="name" alt="Russia">Russia<br />Soon...</label>
+                <img src="images/russia-isometric-touristic-map_1284-15117.jpg" />
+            </div> 
+        </div>
+        <div>
+            <div id="selected">
+                <div class="modal-content animate-zoom">
+                    <img id="here" class="result" />
+                    <img src="images/iconProfil.png" class="icon" alt="profil"/>
+                    <nav>
+                        <a class="pink-hover" href="../Game/mainPage.html" rel="next"> אנו שמחים שבחרת לבקר בארץ שלנו (: לחץ כאן כדי להכנס</a>
+                    </nav>
+                </div>
+                <button onclick="close1()">&times;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
